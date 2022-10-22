@@ -6,14 +6,21 @@ import data from "../data.json"
 import { FaTrash } from 'react-icons/fa';
 
 
-function Tap() {
+function Tap({setformdata, formdata}) {
   const [viewport, setViewport] = useState({})
   // latitude: -1.236561,
     // longitude: 36.898133,
+  
+ 
     
 
     useEffect(() => {
+      
       navigator.geolocation.getCurrentPosition((pos) => {
+       
+
+        setformdata({...formdata,latitude:pos.coords.latitude, longitude:pos.coords.longitude})
+
         setViewport({
           ...viewport,
           latitude: pos.coords.latitude,
@@ -41,8 +48,8 @@ function Tap() {
 
       {data.features.map((trash)=>(
         <Marker key={trash.id} latitude={trash.location.x} longitude={trash.location.y} >
-          longitude={viewport.longitude}
-          latitude={viewport.latitude}
+          {/* longitude ={viewport.longitude}
+          latitude ={viewport.latitude} */}
           <button onClick={(e) =>{
           e.preventDefault();
           console.log("wee")

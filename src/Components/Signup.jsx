@@ -39,7 +39,7 @@ function Signup() {
       const key = event.target.name;
       const value = event.target.value;
       setformdata({ ...formdata, [key]: value });
-      };
+    };
   
       function handlesubmit(e){
           e.preventDefault()

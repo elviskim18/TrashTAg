@@ -10,11 +10,37 @@ import Tap from './Tap';
 
 function Home() {
     const [visible ,setvisible] = useState(false)
+    const [formdata, setformdata] = useState({
+        description:"",
+        image:"",
+        latitude:0,
+        longitude:0
+    })
+
+    const [mylocation, setmylocation] = useState({
+        latitude:0,
+        longitude:0
+      })
+
+    // console.log(mylocation)
+
+    //handleChange
+    function handleChange(event){
+     const key = event.target.name;
+      const value = event.target.value;
+      setformdata({ ...formdata, [key]: value });
+    }
+    //handlesubmit
+    function handleSubmit(event){
+        event.preventDefault();
+        console.log(formdata)
+    }
+
   return (
     <div className='Home'>
         <div className='top'>
             <div className='map'>
-                <Tap/>
+                <Tap setformdata={setformdata} formdata={formdata}/>
             </div>
             <div className='side-img'>
              <img src={Toon} alt='toon'className='toon'/>
@@ -22,13 +48,14 @@ function Home() {
         </div>
         <div className='post'>
             <button onClick={() => setvisible((visible) => !visible)}>POST TRASH</button>
-            <form  className={visible ? "post-form" : "close"} >
+            <form onSubmit={handleSubmit} className={visible ? "post-form" : "close"} >
                 <p>Kindly fill in the details below</p>
-            <input type="text" id="description" name="description" placeholder="Description" />
-            <input type="text" id="image" name="image" placeholder="Image Url"/>
-            <input type="text" id="latitude" name="latitude" placeholder="Latitude"/>
-            <input type="text" id="longitude" name="longitude" placeholder="Longitude"/>
-            <button className="done" >SAVE</button>
+            <input type="text" id="description" name="description" placeholder="Description" value={formdata?.description} onChange={handleChange}/>
+            <input type="text" id="image" name="image" placeholder="Image Url" value={formdata?.image} onChange={handleChange}/>
+            {/* <button className="done" onClick={()=>{
+                setformdata({...formdata, latitude:mylocation.latitude, longitude:mylocation.longitude})}}>GET LOCATION</button> */}
+           
+            <button type='submit' className="done" >SAVE</button>
         </form>  
         </div>
 
