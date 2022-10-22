@@ -1,14 +1,13 @@
-.footer{
-    background-color: black;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    .social{
-        color: white;
-        font-size: 2em;
-        padding: 20px 40px;
-       
-    }
+.footer {
+  background-color: black;
+  position: relative;
+  bottom: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .social {
+    color: white;
+    font-size: 2em;
+    padding: 20px 40px;
+  }
 }
