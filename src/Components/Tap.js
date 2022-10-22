@@ -1,20 +1,27 @@
-// import * as React from 'react';
-import Map, {Marker, Popup} from 'react-map-gl';
 
-import React, { useState} from 'react';
+import Map, {Marker, Popup, GeolocateControl } from 'react-map-gl';
+
+import React, { useState, useEffect} from 'react';
 import data from "../data.json"
 import { FaTrash } from 'react-icons/fa';
 
 
 function Tap() {
-  const [viewport, setViewport] = useState({
-    latitude: -1.236561,
-    longitude: 36.898133,
-    // width: "100vw",
-    // height: "100vh",
-    // scrollZoom:true,
-    minZoom: 10
-  })
+  const [viewport, setViewport] = useState({})
+  // latitude: -1.236561,
+    // longitude: 36.898133,
+    
+
+    useEffect(() => {
+      navigator.geolocation.getCurrentPosition((pos) => {
+        setViewport({
+          ...viewport,
+          latitude: pos.coords.latitude,
+          longitude: pos.coords.longitude,
+          minZoom: 10
+        });
+      });
+    }, []);
 
 
   const [selectedtrash, setselectedtrash] = useState(null);
@@ -25,12 +32,17 @@ function Tap() {
     mapStyle="mapbox://styles/elviskim18/cl8y9itdl00re14oblugukpmy"
     mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
     
-    onViewportChange={(nextviewport) => setViewport(nextviewport)}
+    // onViewportChange={(nextviewport) => setViewport(nextviewport)}
     >
-      
+      <GeolocateControl
+          positionOptions={{ enableHighAccuracy: true }}
+          trackUserLocation={true}
+        />
 
       {data.features.map((trash)=>(
         <Marker key={trash.id} latitude={trash.location.x} longitude={trash.location.y} >
+          longitude={viewport.longitude}
+          latitude={viewport.latitude}
           <button onClick={(e) =>{
           e.preventDefault();
           console.log("wee")
