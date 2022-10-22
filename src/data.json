@@ -1,0 +1,46 @@
+{"features":[{
+    "id":1,
+    "description": "aefada audahwd UHDA",
+    "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.timesofisrael.com%2Fas-world-marks-earth-day-trash-still-a-big-problem%2F&psig=AOvVaw0mwZq1N8Wt_k2yB4UNZUUU&ust=1665472923992000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKDv7aGQ1foCFQAAAAAdAAAAABAE",
+    "location":{
+        "x":-1.2139534971111,
+        "y": 36.90261266498959
+    }
+},
+{
+    "id":2,
+    "description": "lots of cans",
+    "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.timesofisrael.com%2Fas-world-marks-earth-day-trash-still-a-big-problem%2F&psig=AOvVaw0mwZq1N8Wt_k2yB4UNZUUU&ust=1665472923992000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKDv7aGQ1foCFQAAAAAdAAAAABAE",
+    "location":{
+        "x":-1.2287130213198558,
+        "y": 36.87926671716787
+    }
+},
+{
+    "id":3,
+    "description": "lots of glass",
+    "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.timesofisrael.com%2Fas-world-marks-earth-day-trash-still-a-big-problem%2F&psig=AOvVaw0mwZq1N8Wt_k2yB4UNZUUU&ust=1665472923992000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKDv7aGQ1foCFQAAAAAdAAAAABAE",
+    "location":{
+        "x":-1.2826017471420281,
+        "y": 36.8442477954353
+    }
+},
+{
+    "id":4,
+    "description": "lots of papers",
+    "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.timesofisrael.com%2Fas-world-marks-earth-day-trash-still-a-big-problem%2F&psig=AOvVaw0mwZq1N8Wt_k2yB4UNZUUU&ust=1665472923992000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKDv7aGQ1foCFQAAAAAdAAAAABAE",
+    "location":{
+        "x":-1.2692154798395958,
+        "y": 36.89643285527208
+    }
+},
+{
+    "id":5,
+    "description": "lots of scrap metals",
+    "image":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.timesofisrael.com%2Fas-world-marks-earth-day-trash-still-a-big-problem%2F&psig=AOvVaw0mwZq1N8Wt_k2yB4UNZUUU&ust=1665472923992000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKDv7aGQ1foCFQAAAAAdAAAAABAE",
+    "location":{
+        "x":-1.268872241302198,
+        "y": 36.85763738315658
+    }
+}]
+}

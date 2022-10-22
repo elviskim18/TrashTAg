@@ -1,0 +1,124 @@
+.About{
+    height: 81.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .component-one{
+        background-color:#FFFFFF;
+        height: 60vh;
+        width: 300px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 5px 5px 10px 5px #bebcbc;
+        justify-content: center;
+        .sign{
+            font-size: 3em;
+            padding-bottom: 30px;
+            color: #90D25C;
+        }
+        h2{
+            margin: 30px;
+            color: #90D25C;
+        }
+        p{
+            margin: 30px;
+        }
+        transition: transform .2s;
+        &:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.2);
+        }
+
+    }
+    .component-two{
+        background-color:#F3FDE9;
+        height: 60vh;
+        width: 300px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 5px 5px 10px 5px #bebcbc;
+        justify-content: center;
+        .sign{
+            font-size: 3em;
+            padding-bottom: 30px;
+            color: #90D25C;
+        }
+        h2{
+            margin: 30px;
+            color: #90D25C;
+        }
+        p{
+            margin: 30px;
+        }
+        transition: transform .2s;
+        &:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.2);
+        }
+    
+
+    }
+    .component-three{
+        background-color: #DCF9C4;
+        width: 300px;
+        height: 60vh;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 5px 5px 10px 5px #bebcbc;
+        justify-content: center;
+        .sign{
+            font-size: 3em;
+            padding-bottom: 30px;
+            color: #90D25C;
+        }
+        h2{
+            margin: 30px;
+            color: #90D25C;
+        }
+        p{
+            margin: 30px;
+        }
+        transition: transform .2s;
+        &:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.2);
+        }
+    }
+    .component-four{
+        background-color: #7FC846;
+        width: 300px;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 5px 5px 10px 5px #bebcbc;
+        justify-content: center;
+        .sign{
+            font-size: 3em;
+            padding-bottom: 30px;
+            color: #fff;
+        }
+        h2{
+            margin: 30px;
+            color: #fff;
+        }
+        p{
+            margin: 30px;
+        }
+        transition: transform .2s;
+        &:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.2);
+        }
+    }
+}

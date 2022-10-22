@@ -1,0 +1,122 @@
+.App{
+  margin-top: 0px;
+  height: 100vh;
+  background-color: #67AE5C;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .left{
+    h1{
+      padding: 30px;
+      color: white;
+      width: 400px;
+      margin-left: 40px;
+      font-weight: lighter;
+      font-size: 3em;
+    }
+    width: 65vw;
+    .image{
+  
+      margin-top: 140px;
+      margin-left: 40px;
+    }
+  }
+  .right{
+    background-color: white;
+    height: 70vh;
+    width: 25vw;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 30px;
+    h2{
+      text-align: center;
+    
+      font-size: 2em;
+      font-weight: lighter;
+    }
+    h4{
+      font-weight: lighter;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    p{
+      color: #67AE5C;
+      text-align: center;
+    }
+    h5{
+      font-weight: lighter;
+      text-align: center;
+    }
+    .formtest{
+      
+      display: flex;
+      flex-direction: column;
+      color: white;
+      background-color: black;
+      border-radius: 10px;
+      input{
+        width: 300px;
+        padding: 15px;
+
+        margin-left: 60px;
+        border-radius: 10px;
+        border: 0.5px solid;
+        
+      }
+      button{
+        width: 190px;
+        padding: 15px;
+        color: #67AE5C;
+        margin-left: 150px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        
+      }
+      
+}
+    form{
+      
+      display: flex;
+      flex-direction: column;
+      input{
+        width: 300px;
+        padding: 18px;
+        margin-bottom: 30px;
+        margin-left: 60px;
+        border-radius: 10px;
+        border: 0.5px solid;
+        
+      }
+      button{
+        width: 190px;
+        padding: 15px;
+        color: white;
+        margin-left: 150px;
+        margin-top: 20px;
+        background-color: #67AE5C;
+        border: none;
+        border-radius: 10px;
+        
+      }
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+
+// .sumbua{
+//   position: absolute;
+//   top: 10px;
+//   right: 320px;
+//   color: red;
+//   p{
+//     color: red;
+//   }
+// }

@@ -1,0 +1,140 @@
+.Dispose{
+    height: 81.7vh;
+    .Title{
+        padding: 20px;
+        text-align: center;
+    }
+    .Tweet{
+        
+        height: 75vh;
+        display: flex;
+        // flex-direction: row;
+        justify-content: center;
+        .lEFT{
+            
+            width: 600px;
+            
+            margin-right: 150px;
+            height: 75vh;
+            overflow: hidden;
+            overflow-y: auto;
+            
+            .pOST{
+                height: 350px;
+                border: 1px solid black;
+                margin-bottom: 20px;
+                background-color: #EAFCFC;
+                border-radius: 30px;
+                display: flex;
+                flex-direction: column;
+                .uSERNAME{
+                    padding-top: 5px;
+                    margin-left: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 1em;
+                    p{
+                        padding-left: 20px;
+                    }
+                }
+                .dESCRIPTION{
+                    padding-left: 50px;
+                    
+                }
+                .iMAGE{
+                    margin-left: 80px;
+                    .i-image{
+                        border:  1px solid green;
+                        height: 140px;
+                        width: 400px;
+                        border-radius: 20px;
+                    }
+                }
+                .cALL{
+                    padding-top: 30px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.4em;
+                    font-weight: lighter;
+                    .phone{
+                        margin-left: 60px;
+                    }
+                }
+            }
+           
+            
+        }
+        .rIGHT{
+            height: 75vh;
+            width: 500px;
+            .Search{
+                padding: 15px 70px;
+                border-radius: 10px;
+                border: 1px solid black;
+                background-color: #F7F9F9;
+                margin-left: 30px;
+            }
+            .nEW{
+                
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+
+                .dp{
+                    display: flex;
+                    font-size: 1.2em;
+                    flex-direction: row;
+                    p{
+                        padding-left: 10px;
+                    }
+                    
+                }
+                form{
+                
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 40px;
+                    .dISPOSE{
+                        padding: 10px;
+                        border: none;
+                        margin-bottom: 20px;
+                    }
+                    button{
+                        padding: 10px;
+                        margin-top: 40px;
+                        color: white;
+                        background-color: #90D25C;
+                        border: none;
+                        border-radius: 10px;
+                        width: 50%;
+                    }
+                }
+
+            }
+        }
+    }
+}
+.tESTING{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.post-number{
+    display: block;
+    position: relative;
+    top: 10px;
+    height: 60px;
+    width: 120px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    font-size: 0.7em;
+    text-align: center;
+    
+}
+.close-number{
+    display: none;
+    position: relative;
+    top: 10px;
+    
+}
