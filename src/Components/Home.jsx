@@ -5,6 +5,7 @@ import { FaPeopleCarry } from 'react-icons/fa';
 
 
 
+
 import Toon from "../images/toon.png"
 import Tap from './Tap';
 
@@ -13,15 +14,21 @@ function Home() {
     const [formdata, setformdata] = useState({
         description:"",
         image:"",
-        latitude:0,
-        longitude:0
+        latitude:'',
+        longitude:''
     })
 
     const [mylocation, setmylocation] = useState({
         latitude:0,
         longitude:0
-      })
+    })
 
+    //   function getlocation(){
+    //     navigator.geolocation.getCurrentPosition((pos) => {
+    //     setformdata({...formdata,latitude:pos.coords.latitude, longitude:pos.coords.longitude})
+    //     console.log(pos.coords.longitude)
+    //     })
+    //   }
     // console.log(mylocation)
 
     //handleChange
@@ -52,8 +59,7 @@ function Home() {
                 <p>Kindly fill in the details below</p>
             <input type="text" id="description" name="description" placeholder="Description" value={formdata?.description} onChange={handleChange}/>
             <input type="text" id="image" name="image" placeholder="Image Url" value={formdata?.image} onChange={handleChange}/>
-            {/* <button className="done" onClick={()=>{
-                setformdata({...formdata, latitude:mylocation.latitude, longitude:mylocation.longitude})}}>GET LOCATION</button> */}
+            <button className="done">GET LOCATION</button>
            
             <button type='submit' className="done" >SAVE</button>
         </form>  

@@ -19,7 +19,8 @@ function Tap({setformdata, formdata}) {
       navigator.geolocation.getCurrentPosition((pos) => {
        
 
-        setformdata({...formdata,latitude:pos.coords.latitude, longitude:pos.coords.longitude})
+        console.log(pos.coords.latitude)
+        // setformdata({...formdata,latitude:'877', longitude:'979'})
 
         setViewport({
           ...viewport,
@@ -29,6 +30,9 @@ function Tap({setformdata, formdata}) {
         });
       });
     }, []);
+
+
+
 
 
   const [selectedtrash, setselectedtrash] = useState(null);

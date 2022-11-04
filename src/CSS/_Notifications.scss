@@ -1,21 +1,20 @@
-.nOTIFICATIONS{
+.nOTIFICATIONS {
+  height: 81.7vh;
+  display: flex;
+  .container {
+    background-color: rgb(231, 231, 231);
+    width: 400px;
     height: 81.7vh;
-    display: flex;
-    .container{
-        background-color: rgb(222, 163, 163);
-        width: 400px;
-        height: 81.7vh;
-        overflow: hidden;
-        overflow-y: auto;
-        .element{
-            height: 300px;
-            background-color: aqua;
-            margin-bottom: 20px;
-            border-radius: 30px;
-        }
+    overflow: hidden;
+    overflow-y: auto;
+    .element {
+      height: 300px;
+      background-color: grey;
+      margin-bottom: 20px;
+      border-radius: 10px;
     }
-    .rcontainer{
-        margin-left: 20px;
-        
-    }
+  }
+  .rcontainer {
+    margin-left: 20px;
+  }
 }
